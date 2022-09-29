@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FOOD COURT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+        body,h1,h5 {
+          font-family: "Raleway", sans-serif
+        }
+        body, html {height: 100%}
+        .bgimg {
+          background-image: url('foodd.png');
+          min-height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
+        </style>
+        </head>
+        <body>
+              
+            <div class="bgimg w3-display-container w3-text-white">
+              <h1 style="padding-left:500px; color:white; "><b><u>FOOD COURT</u></b></h1>
+              <h1 style="padding-left:250px; color:white;">
+                <marquee behavior="scroll" direction="left" scrollamount="20"><i>!!!!!!!!!!!!!!!!!!Welcome to  Food court!!!!!!!!!!!!!!!!</i></marquee></h1>
+                <!-- <marquee behavior="scroll" direction="right" scrollamount="20">Beautiful Resturant</marquee> -->
+                <marquee width="40%" direction="up" height="30%"><pre style="color:blue;    font-size:30px;  float:left; "><i>FAMOUS ITEM: 
+          RAMBO CHICKEN
+                </i></pre></marquee>
+                <h1></h1>
+              <div class="w3-display-middle w3-jumbo">
+                </div>
+              <div class="w3-display-topleft w3-container w3-xlarge">
+                <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+                <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+              </div>
+              <div class="w3-display-bottomleft w3-container">
+                <pre class="w3-xlarge" style="color:yellow;">monday - friday | Sunday
+                  Timing:morning 10-00AM To Night 10-00 PM</pre>
+                <h1 class="w3-large" style="padding-left:800px; color:yellowl">RGUKT-nuzvid--malayavaram road</h1>
+                <p  style="padding-left:1100px; color:aqua; font-size:20px;">----powered by vanaja</p>
+              </div>
+            </div>
+            
+            
+            <div id="menu" class="w3-modal" style="display: none;">
+              <div class="w3-modal-content w3-animate-zoom">
+                <div class="w3-container w3-black w3-display-container">
+                  <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                  <h1>BREAKFAST:</h1>
+                </div>
+                <div class="w3-container">
+                  <h5>Idly <b>--RS.30</b></h5>
+                  <h5>Boda <b>--Rs.30</b></h5>
+                  <h5>Onion dosa <b>--Rs.30</b></h5>
+                  <h5>puri <b>--RS.40</b></h5>
+                </div>
+                <div class="w3-container w3-yellow">
+                  <h1>VEG ITEM</h1>
+                </div>
+                <div class="w3-container">
+                  <h5>veg fryrice <b>--RS.50</b></h5>
+                  <h5>veg Noodle <b>--RS.50</b></h5>
+                  <h5>veg Biryani <b>--RS.60</b></h5>
+                  <h5>Veg meals <b>--RS.50</b></h5>
+                </div>
+                <div class="w3-container w3-blue">
+                  <h1>Non-VEG</h1>
+                </div>
+                <div class="w3-container">
+                  <h5>chicken Birayani <b>--RS.150</b></h5>
+                  <h5>chicken Noodles <b>--RS.70</b></h5>
+                  <h5>chicken fryrice <b>--RS.90</b></h5>
+                  <h5>chicken fry bits <b>--RS.200</b></h5>
+                  <h5>family pack briyani <b>--RS.530</b></h5>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Contact Modal -->
+            <div id="contact" class="w3-modal" style="display: none;">
+              <div class="w3-modal-content w3-animate-zoom">
+                <div class="w3-container w3-blue">
+                  <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                  <h1>Contact</h1>
+                </div>
+                <div class="w3-container">
+                  <p>Reserve a table, ask for today's special or just send us a message:</p>
+                  <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many plates" required="" name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" value=""></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+                    <p><button class="w3-button" type="submit">SUBMIT</button></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+  </body>
+</html>
